@@ -1,0 +1,152 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity core is
+  
+  port (
+    clk : in std_logic;
+    rst : in std_logic;
+
+
+    mem_read  : out std_logic;
+    mem_write : out std_logic;
+
+    mem_data_in  : in  std_logic_vector(31 downto 0);
+    mem_data_out : out std_logic_vector(31 downto 0);
+    mem_addr     : out std_logic_vector(31 downto 0)
+
+    );
+
+end entity core;
+
+architecture arc of core is
+
+  component control_unit is
+    port (
+      clk           : in  std_logic;
+      rst           : in  std_logic;
+      op            : in  std_logic_vector(5 downto 0);
+      fn            : in  std_logic_vector(5 downto 0);
+      alu_overflow  : in  std_logic;
+      pc_write      : out std_logic;
+      inst_data_sel : out std_logic;
+      mem_read      : out std_logic;
+      mem_write     : out std_logic;
+      ir_write      : out std_logic;
+      rd_sel        : out std_logic_vector(1 downto 0);
+      rd_data_sel   : out std_logic;
+      rd_write_en   : out std_logic;
+      alu_op_a_sel  : out std_logic;
+      alu_op_b_sel  : out std_logic_vector(1 downto 0);
+      alu_arith_fn  : out std_logic;
+      alu_logic_fn  : out std_logic_vector(1 downto 0);
+      alu_fn        : out std_logic_vector(1 downto 0);
+      pc_src_sel    : out std_logic_vector(1 downto 0);
+      jmp_addr_sel  : out std_logic);
+
+  end component control_unit;
+
+  component datapath_multi is
+    port (
+      clk           : in std_logic;
+      rst           : in std_logic;
+      pc_write      : in std_logic;
+      inst_data_sel : in std_logic;     -- inst'Data from RAM
+      ir_write      : in std_logic;     -- InstructionRegister Write
+      rd_sel        : in std_logic_vector(1 downto 0);
+      rd_data_sel   : in std_logic;
+      rd_write_en   : in std_logic;
+      alu_op_a_sel  : in std_logic;
+      alu_op_b_sel  : in std_logic_vector(1 downto 0);
+      alu_arith_fn  : in std_logic;
+      alu_logic_fn  : in std_logic_vector(1 downto 0);
+      alu_fn        : in std_logic_vector(1 downto 0);
+      pc_src_sel    : in std_logic_vector(1 downto 0);
+      jmp_addr_sel  : in std_logic;
+
+      mem_data_in : in std_logic_vector(31 downto 0);
+
+      -- output
+      alu_overflow : out std_logic;
+
+      mem_addr     : out std_logic_vector(31 downto 0);
+      mem_data_out : out std_logic_vector(31 downto 0);
+
+      opcode : out std_logic_vector(5 downto 0);
+      func   : out std_logic_vector(5 downto 0)
+
+      );                                --port end
+  end component datapath_multi;
+
+  signal pc_write_sig      : std_logic;
+  signal inst_data_sel_sig : std_logic;  -- inst'Data from RAM
+  signal ir_write_sig      : std_logic;  -- InstructionRegister Write
+  signal rd_sel_sig        : std_logic_vector(1 downto 0);
+  signal rd_data_sel_sig   : std_logic;
+  signal rd_write_en_sig   : std_logic;
+  signal alu_op_a_sel_sig  : std_logic;
+  signal alu_op_b_sel_sig  : std_logic_vector(1 downto 0);
+  signal alu_arith_fn_sig  : std_logic;
+  signal alu_logic_fn_sig  : std_logic_vector(1 downto 0);
+  signal alu_fn_sig        : std_logic_vector(1 downto 0);
+  signal pc_src_sel_sig    : std_logic_vector(1 downto 0);
+  signal jmp_addr_sel_sig  : std_logic;
+  signal alu_overflow_sig  : std_logic;
+  signal opcode_sig        : std_logic_vector(5 downto 0);
+  signal func_sig          : std_logic_vector(5 downto 0);
+begin  -- architecture arc
+
+  cu : control_unit port map (
+    clk           => clk,
+    rst           => rst,
+    op            => opcode_sig,
+    fn            => func_sig,
+    alu_overflow  => alu_overflow_sig,
+    pc_write      => pc_write_sig,
+    inst_data_sel => inst_data_sel_sig,
+    mem_read      => mem_read,
+    mem_write     => mem_write,
+    ir_write      => ir_write_sig,
+    rd_sel        => rd_sel_sig,
+    rd_data_sel   => rd_data_sel_sig,
+    rd_write_en   => rd_write_en_sig,
+    alu_op_a_sel  => alu_op_a_sel_sig,
+    alu_op_b_sel  => alu_op_b_sel_sig,
+    alu_arith_fn  => alu_arith_fn_sig,
+    alu_logic_fn  => alu_logic_fn_sig,
+    alu_fn        => alu_fn_sig,
+    pc_src_sel    => pc_src_sel_sig,
+    jmp_addr_sel  => jmp_addr_sel_sig);
+
+  datapath : datapath_multi port map (
+    clk           => clk,
+    rst           => rst,
+    pc_write      => pc_write_sig,
+    inst_data_sel => inst_data_sel_sig,
+    ir_write      => ir_write_sig,
+    rd_sel        => rd_sel_sig,
+    rd_data_sel   => rd_data_sel_sig,
+    rd_write_en   => rd_write_en_sig,
+    alu_op_a_sel  => alu_op_a_sel_sig,
+    alu_op_b_sel  => alu_op_b_sel_sig,
+    alu_arith_fn  => alu_arith_fn_sig,
+    alu_logic_fn  => alu_logic_fn_sig,
+    alu_fn        => alu_fn_sig,
+    pc_src_sel    => pc_src_sel_sig,
+    jmp_addr_sel  => jmp_addr_sel_sig,
+
+    mem_data_in => mem_data_in,
+
+    -- output
+    alu_overflow => alu_overflow_sig,
+
+    mem_addr     => mem_addr,
+    mem_data_out => mem_data_out,
+
+    opcode => opcode_sig,
+    func   => func_sig
+    );
+
+
+end architecture arc;

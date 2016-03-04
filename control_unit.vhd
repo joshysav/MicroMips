@@ -8,6 +8,7 @@ entity control_unit is
     rst           : in  std_logic;
     op            : in  std_logic_vector(5 downto 0);
     fn            : in  std_logic_vector(5 downto 0);
+    alu_overflow     : in  std_logic;
     pc_write      : out std_logic;
     inst_data_sel : out std_logic;
     mem_read      : out std_logic;
@@ -207,7 +208,7 @@ begin  -- architecture rtl
         alu_op_a_sel <= '1';
         alu_op_b_sel <= "10";
         alu_arith_fn <= '0';
-        alu_fn   <= "10";
+        alu_fn       <= "10";
       when MEM_LD_1 =>
         inst_data_sel <= '1';
         mem_read      <= '1';

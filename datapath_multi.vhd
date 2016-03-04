@@ -20,13 +20,16 @@ entity datapath_multi is
     pc_src_sel:         in std_logic_vector(1 downto 0);
     jmp_addr_sel:       in std_logic;
 
-
-
-    -- Signals for RAM
-    mem_read:           in std_logic;
-    mem_write:          in std_logic;
+    mem_data_in:            in std_logic_vector(31 downto 0);
+    
     -- output
-    alu_overflow :      out std_logic
+    alu_overflow :      out std_logic;
+
+    mem_addr:           out std_logic_vector(31 downto 0);
+    mem_data_out:       out std_logic_vector(31 downto 0);
+
+    opcode:             out std_logic_vector(5 downto 0);
+    func:               out std_logic_vector(5 downto 0)
 
     );	--port end
 
@@ -35,20 +38,6 @@ entity datapath_multi is
 end entity datapath_multi;
 
 architecture rtl of datapath_multi is
-
-
----- COMPONENTS
- component ram is
-
-   port (
-     clk      : in  std_logic;
-     addr     : in  std_logic_vector(31 downto 0);
-     data_in  : in  std_logic_vector(31 downto 0);
-     read_en  : in  std_logic;
-     write_en : in  std_logic;
-     data_out : out std_logic_vector(31 downto 0));
-
- end component ram;
 
  component register_file is
 
@@ -87,8 +76,6 @@ architecture rtl of datapath_multi is
     signal pc_src_mux_out_sig : std_logic_vector(31 downto 0); -- output from pc src select mux
 
     signal inst_data_mux_out :  std_logic_vector(31 downto 0);
-    signal z_reg_out_sig     :  std_logic_vector(31 downto 0);
-    signal y_reg_out_sig     :  std_logic_vector(31 downto 0);
 
     signal ram_out_sig      :  std_logic_vector(31 downto 0);  -- out signal from RAM
 
@@ -108,15 +95,6 @@ architecture rtl of datapath_multi is
     signal jmp_addr_mux_out_sig : std_logic_vector(29 downto 0);
 
 begin  -- architecture rtl
-
- ram_inst : ram port map (
-   clk      => clk,
-   addr     => inst_data_mux_out,
-   read_en  => mem_read,
-   write_en => mem_write,
-   data_in  => y_register,
-   data_out => ram_out_sig);
-
 
 reg_file : register_file port map (
   rs_sel => ir_register(25 downto 21),
@@ -140,7 +118,6 @@ alu_inst : alu port map (
 
 );
 
-
 --  -- PROGRAM COUNTER
  pc_update: process (clk, rst, pc_write, pc_src_mux_out_sig) is
  begin  -- process
@@ -152,32 +129,38 @@ alu_inst : alu port map (
  end process;
 
 ---- RAM
+mem_data_output: process (y_register) is
+  begin
+    mem_data_out <= y_register;
+  end process mem_data_output;
+
+  
 
 ---- SELECT ADDRESS SOURCE FOR RAM
-inst_data_sel_proc: process (pc_register, z_reg_out_sig, inst_data_sel) is
+inst_data_sel_proc: process (pc_register, z_register, inst_data_sel) is
 begin  -- process inst_data_sel_proc
   case inst_data_sel is
     when '0' =>
-      inst_data_mux_out <= pc_register;                  -- program counter to address
+      mem_addr <= pc_register;                  -- program counter to address
     when others =>
-      inst_data_mux_out <= z_register;       --
+      mem_addr <= z_register;       --
   end case;
 end process inst_data_sel_proc;
 
 -- -- REGISTERS
-ir_register_update: process (clk, ram_out_sig, ir_write) is
+ir_register_update: process (clk, mem_data_in, ir_write) is
 begin
   if clk'event and clk ='1' and ir_write = '1' then
-      ir_register <= ram_out_sig;
+      ir_register <= mem_data_in;
   end if;
 end process ir_register_update;
 
 
 -- -- DATA REGISTERS
-dr_register_update: process (clk, ram_out_sig) is
+dr_register_update: process (clk, mem_data_in) is
 begin
   if clk'event and clk ='1' then
-      dr_register <= ram_out_sig;
+      dr_register <= mem_data_in;
   end if;
 end process dr_register_update;
 
@@ -195,7 +178,7 @@ begin
 end process rd_sel_mux;
 
 
-rd_data_sel_mux: process (rd_data_sel, dr_register ) is
+rd_data_sel_mux: process (rd_data_sel, dr_register , z_register) is
 begin
   case( rd_data_sel ) is
     when '0' =>
@@ -259,7 +242,7 @@ begin
 end process z_register_update;
 
 
-jmp_addr_mux : process (ir_register, jmp_addr_sel) is
+jmp_addr_mux : process (ir_register, jmp_addr_sel, pc_register) is
 begin
 case( jmp_addr_sel ) is
   when '0' =>
@@ -285,7 +268,8 @@ begin
   end case;
 end process pc_src_sel_mux;
 
-
+opcode <= ir_register(31 downto 26);
+func <= ir_register(5 downto 0);
 
 
 end architecture rtl;

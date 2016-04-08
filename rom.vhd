@@ -9,7 +9,7 @@ entity rom is
     ce       : in  std_logic;
     oe       : in  std_logic;
     byte_sel : in  std_logic_vector(3 downto 0);
-    addr     : in  std_logic_vector(9 downto 0);
+    addr     : in  std_logic_vector(15 downto 0);
     data_out : out std_logic_vector(31 downto 0));
 end entity rom;
 
@@ -19,8 +19,8 @@ architecture rtl of rom is
 
   signal rom_bank_0 : rom_bank_t :=
     (
-      "10101010101010101010101010101010",  -- 0
-      "10101010101010101010101010101010",  -- 1
+      "00001000000000000000000000000001",  -- J to 0x0004
+      "00100000000000010000000000011000",  -- ADDI $r1, $r0, 24
       "10101010101010101010101010101010",
       "10101010101010101010101010101010",
       "10101010101010101010101010101010",

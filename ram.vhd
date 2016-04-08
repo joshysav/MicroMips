@@ -9,7 +9,7 @@ entity ram is
     oe       : in    std_logic;
     we       : in    std_logic;
     byte_sel : in    std_logic_vector(3 downto 0);
-    addr     : in    std_logic_vector(9 downto 0);
+    addr     : in    std_logic_vector(15 downto 0);
     data     : inout std_logic_vector(31 downto 0));
 end entity ram;
 

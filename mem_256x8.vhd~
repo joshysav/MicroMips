@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mem_256x8 is
+  port (
+    clk      : in  std_logic;
+    ce       : in  std_logic;
+    wr_en    : in  std_logic;
+    addr     : in  std_logic_vector(7 downto 0);
+    data_in  : in  std_logic_vector(7 downto 0);
+    data_out : out std_logic_vector(7 downto 0));
+end entity mem_256x8;
+
+architecture rtl of mem_256x8 is
+
+  type ram_t is array (255 downto 0) of std_logic_vector(7 downto 0);
+  signal mem_s : ram_t := (others => (others => '0'));
+
+begin  -- architecture rtl
+
+  write: process (clk, ce, wr_en, addr, data_in) is
+  begin  -- process write
+    if clk'event and clk = '1' and ce = '1' then
+      if wr_en = '1' then 
+         mem_s(to_integer(unsigned(addr))) <= data_in;
+      end if;
+    end if;
+  end process write;
+
+  data_out <=  mem_s(to_integer(unsigned(addr)));
+
+end architecture rtl;

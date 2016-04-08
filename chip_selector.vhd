@@ -6,17 +6,28 @@ entity chip_selector is
     addr : in  std_logic_vector(15 downto 0);
     cs0  : out std_logic;
     cs1  : out std_logic;
-    cs2  : out std_logic);
+    cs2  : out std_logic;
+    cs3  : out std_logic;
+    cs4  : out std_logic);
 end entity chip_selector;
 
 architecture arc of chip_selector is
 
+-- ROM   0x0000 - 0x03FF
+-- RAM   0x0400 - 0x07FF
+-- GPIO  0x8000 - OUT
+-- GPIO  0x8080 - IN
+-- CLK   0x8100 - OUT
+
 begin
   process (addr) is
   begin
+
     cs0 <= '0';
     cs1 <= '0';
     cs2 <= '0';
+    cs3 <= '0';
+    cs4 <= '0';
     --------------------------------------------
     -- MEMORY  0x0000 to 0x07FF
     --------------------------------------------
@@ -35,8 +46,14 @@ begin
     --------------------------------------------  
     -- I/O  0x8000 to 0xFFFF
     -------------------------------------------
-    elsif addr(15) = '1' then
-      cs2 <= '1';
+    else
+      if addr = "1000000000000000" then
+        cs2 <= '1';
+      elsif addr = "1000000010000000" then
+        cs3 <= '1';
+      elsif addr = "1000000100000000" then
+        cs4 <= '1';
+      end if;
     end if;
   end process;
 end architecture arc;

@@ -1,0 +1,574 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/andris/Documents/digital_design/MicroMips/simulation/modelsim
+Ealu
+Z1 w1453838522
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/andris/Documents/digital_design/MicroMips/alu.vhd
+Z6 F/home/andris/Documents/digital_design/MicroMips/alu.vhd
+l0
+L6
+VbfWjHV^>jFHYW0EOXoo4m2
+!s100 IMc[Zj0?FN>5njG>9agFV2
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1459773141
+!i10b 1
+Z9 !s108 1459773141.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/alu.vhd|
+Z11 !s107 /home/andris/Documents/digital_design/MicroMips/alu.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 bfWjHV^>jFHYW0EOXoo4m2
+l23
+L20
+VU<ccV5kTSYWoYMQTnB8_53
+!s100 ;XodMXG7;3l^5CEQ4nEka0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Echip_selector
+Z14 w1458820001
+R3
+R4
+R0
+Z15 8/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd
+Z16 F/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd
+l0
+L4
+V2GE]SLgb:C_XIi9eo5?Sm2
+!s100 W3@AhzJRAVOo3=KYjlGoY3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd|
+Z18 !s107 /home/andris/Documents/digital_design/MicroMips/chip_selector.vhd|
+!i113 1
+R12
+R13
+Aarc
+R3
+R4
+DEx4 work 13 chip_selector 0 22 2GE]SLgb:C_XIi9eo5?Sm2
+l22
+L14
+Vm0^3eiEoH`XCo2CV=ZYPa0
+!s100 SK3J<;OFAHK[:X?`3cI[Z3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eclock_unit
+Z19 w1458311284
+R2
+R3
+R4
+R0
+Z20 8/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd
+Z21 F/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd
+l0
+L5
+VEPn?anH>zWJoS0=Az>BVT0
+!s100 A7@dI:[l=T]2ZQ1X6LfAE0
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd|
+Z23 !s107 /home/andris/Documents/digital_design/MicroMips/clock_unit.vhd|
+!i113 1
+R12
+R13
+Aarc
+R2
+R3
+R4
+DEx4 work 10 clock_unit 0 22 EPn?anH>zWJoS0=Az>BVT0
+l24
+L18
+VP9W:lVo0j_l35OAVl?<N:0
+!s100 g7n@cL61<[^A_=kFi1a:H3
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Econtrol_unit
+Z24 w1456487440
+R3
+R4
+R0
+Z25 8/home/andris/Documents/digital_design/MicroMips/control_unit.vhd
+Z26 F/home/andris/Documents/digital_design/MicroMips/control_unit.vhd
+l0
+L4
+V>oZO3G]_g18OdNzmVkhZM2
+!s100 N;j:VzaHT^VS=AY8ICmPd2
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/control_unit.vhd|
+Z28 !s107 /home/andris/Documents/digital_design/MicroMips/control_unit.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 12 control_unit 0 22 >oZO3G]_g18OdNzmVkhZM2
+l33
+L30
+V]=VY3^e<g<dWB:3Y[VFf40
+!s100 EKYPS3Q_MEUdXgQ>Lc7`H3
+R7
+31
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Ecore
+Z29 w1458759078
+R3
+R4
+R0
+Z30 8/home/andris/Documents/digital_design/MicroMips/core.vhd
+Z31 F/home/andris/Documents/digital_design/MicroMips/core.vhd
+l0
+L5
+VPdIX`gKl]i:io7WHO:;3e2
+!s100 T9KIjjWE9k95kTfW8K]?K1
+R7
+31
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/core.vhd|
+Z33 !s107 /home/andris/Documents/digital_design/MicroMips/core.vhd|
+!i113 1
+R12
+R13
+Aarc
+R3
+R4
+DEx4 work 4 core 0 22 PdIX`gKl]i:io7WHO:;3e2
+l95
+L15
+V@2?Ym2l3NNLb3@g1FF5D03
+!s100 eRZMHQXKVPRDFXN0o0]m42
+R7
+31
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
+Edatapath
+Z34 w1458754051
+R2
+R3
+R4
+R0
+Z35 8/home/andris/Documents/digital_design/MicroMips/datapath.vhd
+Z36 F/home/andris/Documents/digital_design/MicroMips/datapath.vhd
+l0
+L5
+VeYjRO0TkVKHJP8V2jMF5T2
+!s100 Q9oTmaml9EFNTHF:IP4GL1
+R7
+31
+R8
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/datapath.vhd|
+Z38 !s107 /home/andris/Documents/digital_design/MicroMips/datapath.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 8 datapath 0 22 eYjRO0TkVKHJP8V2jMF5T2
+l115
+L32
+V4NjkLE;zmaBkbhiQDE3gL0
+!s100 ohmUOYHX9m`Qo^]`GZ_FB1
+R7
+31
+R8
+!i10b 1
+R9
+R37
+R38
+!i113 1
+R12
+R13
+Edecode_unit
+Z39 w1458649441
+R2
+R3
+R4
+R0
+Z40 8/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd
+Z41 F/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd
+l0
+L5
+VN4VgXB]n93`LEi:1C@9Ne3
+!s100 6HE:Z9^8zY2L@hTLn;QUS3
+R7
+31
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd|
+Z43 !s107 /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 11 decode_unit 0 22 N4VgXB]n93`LEi:1C@9Ne3
+l44
+L19
+V;Jl<=MUWX8fKMR1<9l3?L0
+!s100 @;^Q7GH6Q7Qkc:PLAGU?R0
+R7
+31
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Eexecute_unit
+Z44 w1458750617
+R2
+R3
+R4
+R0
+Z45 8/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd
+Z46 F/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd
+l0
+L5
+VT3C=LW[4B>FdLn62a1mgl0
+!s100 _5?E6]Q0^ek4WdH6;HAJ12
+R7
+31
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd|
+Z48 !s107 /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 12 execute_unit 0 22 T3C=LW[4B>FdLn62a1mgl0
+l52
+L25
+VTa:@g??dKDzizHW^8C;IP1
+!s100 F36:g6aIHbSIJX_ef@?e@0
+R7
+31
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13
+Efetch_unit
+Z49 w1458751244
+R3
+R4
+R0
+Z50 8/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd
+Z51 F/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd
+l0
+L4
+V;>e`UG18<TdQg`m<ARQk]0
+!s100 ?zHGJBQbkEMIP1K_2gSX52
+R7
+31
+R8
+!i10b 1
+R9
+Z52 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd|
+Z53 !s107 /home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 10 fetch_unit 0 22 ;>e`UG18<TdQg`m<ARQk]0
+l34
+L21
+VPzg[6gQA^ae0[C1khHh>E3
+!s100 `lVR9Z0N?:kLj6FI;3f]X0
+R7
+31
+R8
+!i10b 1
+R9
+R52
+R53
+!i113 1
+R12
+R13
+Eram
+Z54 w1458760433
+R2
+R3
+R4
+R0
+Z55 8/home/andris/Documents/digital_design/MicroMips/ram.vhd
+Z56 F/home/andris/Documents/digital_design/MicroMips/ram.vhd
+l0
+L5
+V@K`3<Mah6F`^aLZc7kT_c3
+!s100 1Q[fGTW^MdLP6jE35:fho1
+R7
+31
+R8
+!i10b 1
+R9
+Z57 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/ram.vhd|
+Z58 !s107 /home/andris/Documents/digital_design/MicroMips/ram.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 3 ram 0 22 @K`3<Mah6F`^aLZc7kT_c3
+l22
+L16
+VWRP76Kbl<D`=oZ@[@:FJ81
+!s100 EjOV3lAAbIfV=7YPDaE562
+R7
+31
+R8
+!i10b 1
+R9
+R57
+R58
+!i113 1
+R12
+R13
+Eregister_file
+R1
+R2
+R3
+R4
+R0
+Z59 8/home/andris/Documents/digital_design/MicroMips/register_file.vhd
+Z60 F/home/andris/Documents/digital_design/MicroMips/register_file.vhd
+l0
+L5
+Va=0LZ34CKah5ef82GdQA83
+!s100 XNWS1QHHoG6mN7jNS]<bj0
+R7
+31
+R8
+!i10b 1
+R9
+Z61 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/register_file.vhd|
+Z62 !s107 /home/andris/Documents/digital_design/MicroMips/register_file.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 a=0LZ34CKah5ef82GdQA83
+l21
+L15
+VG0J;ckS]GQg8:MTVhHRl60
+!s100 k<?hk]1FMn?:4P=79l[=J1
+R7
+31
+R8
+!i10b 1
+R9
+R61
+R62
+!i113 1
+R12
+R13
+Erom
+Z63 w1458822859
+Z64 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R2
+R3
+R4
+R0
+Z65 8/home/andris/Documents/digital_design/MicroMips/rom.vhd
+Z66 F/home/andris/Documents/digital_design/MicroMips/rom.vhd
+l0
+L7
+VKKzY7@W;OG4]6L8Vb`5C[0
+!s100 ::6jAf7@iM76VleD>M:520
+R7
+31
+R8
+!i10b 1
+R9
+Z67 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/rom.vhd|
+Z68 !s107 /home/andris/Documents/digital_design/MicroMips/rom.vhd|
+!i113 1
+R12
+R13
+Artl
+R64
+R2
+R3
+R4
+DEx4 work 3 rom 0 22 KKzY7@W;OG4]6L8Vb`5C[0
+l280
+L16
+V1T3fbbha@F?4i4MhL@biW3
+!s100 LAi;[FD;BS2a:0>?TVQ?H3
+R7
+31
+R8
+!i10b 1
+R9
+R67
+R68
+!i113 1
+R12
+R13
+Esoc
+Z69 w1458820090
+R3
+R4
+R0
+Z70 8/home/andris/Documents/digital_design/MicroMips/soc.vhd
+Z71 F/home/andris/Documents/digital_design/MicroMips/soc.vhd
+l0
+L4
+V6^W<3Oo[]jI@]9C]5BUAI0
+!s100 Ge0QVF?aG;=]fiSUZ6z=V3
+R7
+31
+R8
+!i10b 1
+R9
+Z72 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/soc.vhd|
+Z73 !s107 /home/andris/Documents/digital_design/MicroMips/soc.vhd|
+!i113 1
+R12
+R13
+Aarc
+R3
+R4
+DEx4 work 3 soc 0 22 6^W<3Oo[]jI@]9C]5BUAI0
+l84
+L14
+VG@=<7AlkbQU928^CfZeiH3
+!s100 Ud`c`XVDT8=Lh:ReEYCkH3
+R7
+31
+R8
+!i10b 1
+R9
+R72
+R73
+!i113 1
+R12
+R13
+Ewriteback_unit
+Z74 w1458740548
+R3
+R4
+R0
+Z75 8/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd
+Z76 F/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd
+l0
+L4
+VljZ7iW5RV[jo@CNzbQk>@0
+!s100 PRmKl6nOzD6WV96NAb3hM0
+R7
+31
+R8
+!i10b 1
+R9
+Z77 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd|
+Z78 !s107 /home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 14 writeback_unit 0 22 ljZ7iW5RV[jo@CNzbQk>@0
+l22
+L15
+V?i>CmI7gk9COXSlcgIWn00
+!s100 ijB5;lM_KJ>Y_;nhI5Ld_0
+R7
+31
+R8
+!i10b 1
+R9
+R77
+R78
+!i113 1
+R12
+R13

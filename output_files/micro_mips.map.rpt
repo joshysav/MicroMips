@@ -1,5 +1,5 @@
 Analysis & Elaboration report for micro_mips
-Thu Apr  7 11:25:13 2016
+Wed Apr 13 09:01:16 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -10,7 +10,12 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  5. Port Connectivity Checks: "ram:ram_inst"
+  6. Port Connectivity Checks: "rom:rom_inst"
+  7. Port Connectivity Checks: "core:core_inst|datapath:datap"
+  8. Port Connectivity Checks: "core:core_inst"
+  9. Port Connectivity Checks: "chip_selector:chip_sel"
+ 10. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +42,10 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Apr  7 11:25:13 2016       ;
+; Analysis & Elaboration Status      ; Successful - Wed Apr 13 09:01:16 2016       ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                      ; micro_mips                                  ;
-; Top-level Entity Name              ; datapath                                    ;
+; Top-level Entity Name              ; soc                                         ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; N/A until Partition Merge                   ;
 ;     Total combinational functions  ; N/A until Partition Merge                   ;
@@ -54,20 +59,15 @@ agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -75,7 +75,7 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; datapath           ; micro_mips         ;
+; Top-level entity name                                                      ; soc                ; micro_mips         ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,73 +156,130 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
++--------------------------------------------+
+; Port Connectivity Checks: "ram:ram_inst"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; byte_sel ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "rom:rom_inst"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; byte_sel ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "core:core_inst|datapath:datap"                                                          ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; alu_zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "core:core_inst"                                                                                 ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; mem_addr[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "chip_selector:chip_sel"                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cs2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cs3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu Apr  7 11:25:00 2016
+    Info: Processing started: Wed Apr 13 09:01:08 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off micro_mips -c micro_mips --analysis_and_elaboration
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhd
-    Info (12022): Found design unit 1: datapath-rtl File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 32
-    Info (12023): Found entity 1: datapath File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 5
+    Info (12022): Found design unit 1: datapath-rtl File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 37
+    Info (12023): Found entity 1: datapath File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file writeback_unit.vhd
-    Info (12022): Found design unit 1: writeback_unit-rtl File: /home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd Line: 15
-    Info (12023): Found entity 1: writeback_unit File: /home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd Line: 4
+    Info (12022): Found design unit 1: writeback_unit-rtl File: /home/josh/Documents/assignment/MicroMips/writeback_unit.vhd Line: 15
+    Info (12023): Found entity 1: writeback_unit File: /home/josh/Documents/assignment/MicroMips/writeback_unit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file execute_unit.vhd
-    Info (12022): Found design unit 1: execute_unit-rtl File: /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd Line: 25
-    Info (12023): Found entity 1: execute_unit File: /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd Line: 5
+    Info (12022): Found design unit 1: execute_unit-rtl File: /home/josh/Documents/assignment/MicroMips/execute_unit.vhd Line: 25
+    Info (12023): Found entity 1: execute_unit File: /home/josh/Documents/assignment/MicroMips/execute_unit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decode_unit.vhd
-    Info (12022): Found design unit 1: decode_unit-rtl File: /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd Line: 19
-    Info (12023): Found entity 1: decode_unit File: /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd Line: 5
+    Info (12022): Found design unit 1: decode_unit-rtl File: /home/josh/Documents/assignment/MicroMips/decode_unit.vhd Line: 19
+    Info (12023): Found entity 1: decode_unit File: /home/josh/Documents/assignment/MicroMips/decode_unit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fetch_unit.vhd
-    Info (12022): Found design unit 1: fetch_unit-rtl File: /home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd Line: 21
-    Info (12023): Found entity 1: fetch_unit File: /home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd Line: 4
+    Info (12022): Found design unit 1: fetch_unit-rtl File: /home/josh/Documents/assignment/MicroMips/fetch_unit.vhd Line: 21
+    Info (12023): Found entity 1: fetch_unit File: /home/josh/Documents/assignment/MicroMips/fetch_unit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file clock_unit.vhd
-    Info (12022): Found design unit 1: clock_unit-arc File: /home/andris/Documents/digital_design/MicroMips/clock_unit.vhd Line: 18
-    Info (12023): Found entity 1: clock_unit File: /home/andris/Documents/digital_design/MicroMips/clock_unit.vhd Line: 5
+    Info (12022): Found design unit 1: clock_unit-arc File: /home/josh/Documents/assignment/MicroMips/clock_unit.vhd Line: 18
+    Info (12023): Found entity 1: clock_unit File: /home/josh/Documents/assignment/MicroMips/clock_unit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file soc.vhd
-    Info (12022): Found design unit 1: soc-arc File: /home/andris/Documents/digital_design/MicroMips/soc.vhd Line: 14
-    Info (12023): Found entity 1: soc File: /home/andris/Documents/digital_design/MicroMips/soc.vhd Line: 4
+    Info (12022): Found design unit 1: soc-arc File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 14
+    Info (12023): Found entity 1: soc File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file chip_selector.vhd
-    Info (12022): Found design unit 1: chip_selector-arc File: /home/andris/Documents/digital_design/MicroMips/chip_selector.vhd Line: 14
-    Info (12023): Found entity 1: chip_selector File: /home/andris/Documents/digital_design/MicroMips/chip_selector.vhd Line: 4
+    Info (12022): Found design unit 1: chip_selector-arc File: /home/josh/Documents/assignment/MicroMips/chip_selector.vhd Line: 14
+    Info (12023): Found entity 1: chip_selector File: /home/josh/Documents/assignment/MicroMips/chip_selector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file core.vhd
-    Info (12022): Found design unit 1: core-arc File: /home/andris/Documents/digital_design/MicroMips/core.vhd Line: 15
-    Info (12023): Found entity 1: core File: /home/andris/Documents/digital_design/MicroMips/core.vhd Line: 5
+    Info (12022): Found design unit 1: core-arc File: /home/josh/Documents/assignment/MicroMips/core.vhd Line: 15
+    Info (12023): Found entity 1: core File: /home/josh/Documents/assignment/MicroMips/core.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
-    Info (12022): Found design unit 1: rom-rtl File: /home/andris/Documents/digital_design/MicroMips/rom.vhd Line: 16
-    Info (12023): Found entity 1: rom File: /home/andris/Documents/digital_design/MicroMips/rom.vhd Line: 7
+    Info (12022): Found design unit 1: rom-rtl File: /home/josh/Documents/assignment/MicroMips/rom.vhd Line: 16
+    Info (12023): Found entity 1: rom File: /home/josh/Documents/assignment/MicroMips/rom.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file register_file.vhd
-    Info (12022): Found design unit 1: register_file-rtl File: /home/andris/Documents/digital_design/MicroMips/register_file.vhd Line: 15
-    Info (12023): Found entity 1: register_file File: /home/andris/Documents/digital_design/MicroMips/register_file.vhd Line: 5
+    Info (12022): Found design unit 1: register_file-rtl File: /home/josh/Documents/assignment/MicroMips/register_file.vhd Line: 15
+    Info (12023): Found entity 1: register_file File: /home/josh/Documents/assignment/MicroMips/register_file.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
-    Info (12022): Found design unit 1: ram-rtl File: /home/andris/Documents/digital_design/MicroMips/ram.vhd Line: 16
-    Info (12023): Found entity 1: ram File: /home/andris/Documents/digital_design/MicroMips/ram.vhd Line: 5
+    Info (12022): Found design unit 1: ram-rtl File: /home/josh/Documents/assignment/MicroMips/ram.vhd Line: 16
+    Info (12023): Found entity 1: ram File: /home/josh/Documents/assignment/MicroMips/ram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file control_unit.vhd
-    Info (12022): Found design unit 1: control_unit-rtl File: /home/andris/Documents/digital_design/MicroMips/control_unit.vhd Line: 30
-    Info (12023): Found entity 1: control_unit File: /home/andris/Documents/digital_design/MicroMips/control_unit.vhd Line: 4
+    Info (12022): Found design unit 1: control_unit-rtl File: /home/josh/Documents/assignment/MicroMips/control_unit.vhd Line: 30
+    Info (12023): Found entity 1: control_unit File: /home/josh/Documents/assignment/MicroMips/control_unit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: alu-rtl File: /home/andris/Documents/digital_design/MicroMips/alu.vhd Line: 20
-    Info (12023): Found entity 1: alu File: /home/andris/Documents/digital_design/MicroMips/alu.vhd Line: 6
-Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:fetch_u" File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 117
-Info (12128): Elaborating entity "decode_unit" for hierarchy "decode_unit:decode_u" File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 131
-Info (12128): Elaborating entity "register_file" for hierarchy "decode_unit:decode_u|register_file:reg_file" File: /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at register_file.vhd(25): signal "write_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/andris/Documents/digital_design/MicroMips/register_file.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at register_file.vhd(35): signal "register_f_s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/andris/Documents/digital_design/MicroMips/register_file.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at register_file.vhd(41): signal "register_f_s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/andris/Documents/digital_design/MicroMips/register_file.vhd Line: 41
-Info (12128): Elaborating entity "execute_unit" for hierarchy "execute_unit:execute_u" File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 143
-Warning (10541): VHDL Signal Declaration warning at execute_unit.vhd(19): used implicit default value for signal "alu_zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd Line: 19
-Warning (10540): VHDL Signal Declaration warning at execute_unit.vhd(49): used explicit default value for signal "rst_vec_addr" because signal was never assigned a value File: /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd Line: 49
-Info (12128): Elaborating entity "alu" for hierarchy "execute_unit:execute_u|alu:alu_inst" File: /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd Line: 54
-Info (12128): Elaborating entity "writeback_unit" for hierarchy "writeback_unit:writeback_u" File: /home/andris/Documents/digital_design/MicroMips/datapath.vhd Line: 161
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1495 megabytes
-    Info: Processing ended: Thu Apr  7 11:25:13 2016
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (12022): Found design unit 1: alu-rtl File: /home/josh/Documents/assignment/MicroMips/alu.vhd Line: 20
+    Info (12023): Found entity 1: alu File: /home/josh/Documents/assignment/MicroMips/alu.vhd Line: 6
+Info (12127): Elaborating entity "soc" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at soc.vhd(8): used implicit default value for signal "gpio_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 8
+Warning (10036): Verilog HDL or VHDL warning at soc.vhd(80): object "cs_gpio_out_s" assigned a value but never read File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at soc.vhd(81): object "cs_gpio_in_s" assigned a value but never read File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 81
+Info (12128): Elaborating entity "chip_selector" for hierarchy "chip_selector:chip_sel" File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 86
+Info (12128): Elaborating entity "clock_unit" for hierarchy "clock_unit:clk_unit" File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 94
+Info (12128): Elaborating entity "core" for hierarchy "core:core_inst" File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 103
+Warning (10036): Verilog HDL or VHDL warning at core.vhd(93): object "alu_zero_sig" assigned a value but never read File: /home/josh/Documents/assignment/MicroMips/core.vhd Line: 93
+Info (12128): Elaborating entity "control_unit" for hierarchy "core:core_inst|control_unit:cu" File: /home/josh/Documents/assignment/MicroMips/core.vhd Line: 97
+Info (12128): Elaborating entity "datapath" for hierarchy "core:core_inst|datapath:datap" File: /home/josh/Documents/assignment/MicroMips/core.vhd Line: 119
+Info (12128): Elaborating entity "fetch_unit" for hierarchy "core:core_inst|datapath:datap|fetch_unit:fetch_u" File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 122
+Info (12128): Elaborating entity "decode_unit" for hierarchy "core:core_inst|datapath:datap|decode_unit:decode_u" File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 136
+Info (12128): Elaborating entity "register_file" for hierarchy "core:core_inst|datapath:datap|decode_unit:decode_u|register_file:reg_file" File: /home/josh/Documents/assignment/MicroMips/decode_unit.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at register_file.vhd(25): signal "write_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/josh/Documents/assignment/MicroMips/register_file.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at register_file.vhd(35): signal "register_f_s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/josh/Documents/assignment/MicroMips/register_file.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at register_file.vhd(41): signal "register_f_s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/josh/Documents/assignment/MicroMips/register_file.vhd Line: 41
+Info (12128): Elaborating entity "execute_unit" for hierarchy "core:core_inst|datapath:datap|execute_unit:execute_u" File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 148
+Warning (10541): VHDL Signal Declaration warning at execute_unit.vhd(19): used implicit default value for signal "alu_zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/josh/Documents/assignment/MicroMips/execute_unit.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at execute_unit.vhd(49): used explicit default value for signal "rst_vec_addr" because signal was never assigned a value File: /home/josh/Documents/assignment/MicroMips/execute_unit.vhd Line: 49
+Info (12128): Elaborating entity "alu" for hierarchy "core:core_inst|datapath:datap|execute_unit:execute_u|alu:alu_inst" File: /home/josh/Documents/assignment/MicroMips/execute_unit.vhd Line: 54
+Info (12128): Elaborating entity "writeback_unit" for hierarchy "core:core_inst|datapath:datap|writeback_unit:writeback_u" File: /home/josh/Documents/assignment/MicroMips/datapath.vhd Line: 166
+Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst" File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 111
+Info (12128): Elaborating entity "ram" for hierarchy "ram:ram_inst" File: /home/josh/Documents/assignment/MicroMips/soc.vhd Line: 118
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 1483 megabytes
+    Info: Processing ended: Wed Apr 13 09:01:16 2016
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

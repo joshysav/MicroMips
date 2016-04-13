@@ -1,0 +1,16 @@
+# Current time Tue Apr 12 16:42:24 2016
+# ModelSim Stack Trace
+# Program = vish
+# Id = "10.4b"
+# Version = "2015.05"
+# Date = "May 27 2015"
+# Platform = linuxpe
+# 0    0xf7fdace0: '<unknown (@0xf7fdace0)>'
+# 1    0x085222e4: 'Tcl_DoOneEvent + 0xf4' in '/home/josh/altera/15.1/modelsim_ase/linuxaloem/vish'
+# 2    0x083c957f: 'Tk_MainLoop + 0x1f' in '/home/josh/altera/15.1/modelsim_ase/linuxaloem/vish'
+# 3    0x083d1e94: 'Tk_MainEx + 0x374' in '/home/josh/altera/15.1/modelsim_ase/linuxaloem/vish'
+# 4    0x081b3f02: 'vish_inner_loop + 0x112' in '/home/josh/altera/15.1/modelsim_ase/linuxaloem/vish'
+# 5    0x081b4840: 'main + 0x900' in '/home/josh/altera/15.1/modelsim_ase/linuxaloem/vish'
+# 6    0xf7c23a7e: '__libc_start_main + 0xee' in '/lib/i386-linux-gnu/libc.so.6'
+# End of Stack Trace
+

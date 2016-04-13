@@ -6,118 +6,118 @@
 # vmap work rtl_work
 # Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
 # vmap -modelsim_quiet work rtl_work 
-# Copying /home/andris/altera_lite/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying /home/josh/altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied /home/andris/altera_lite/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied /home/josh/altera/15.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/datapath.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/datapath.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/datapath.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/datapath.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity datapath
 # -- Compiling architecture rtl of datapath
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/writeback_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/writeback_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity writeback_unit
 # -- Compiling architecture rtl of writeback_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/execute_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/execute_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_unit
 # -- Compiling architecture rtl of execute_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/decode_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/decode_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity decode_unit
 # -- Compiling architecture rtl of decode_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/fetch_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/fetch_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity fetch_unit
 # -- Compiling architecture rtl of fetch_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/clock_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/clock_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/clock_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity clock_unit
 # -- Compiling architecture arc of clock_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/soc.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/soc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/soc.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/soc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity soc
 # -- Compiling architecture arc of soc
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/chip_selector.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/chip_selector.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/chip_selector.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity chip_selector
 # -- Compiling architecture arc of chip_selector
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/core.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/core.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/core.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/core.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity core
 # -- Compiling architecture arc of core
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/rom.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/rom.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/rom.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -125,61 +125,61 @@
 # -- Loading package std_logic_textio
 # -- Compiling entity rom
 # -- Compiling architecture rtl of rom
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/register_file.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/register_file.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/register_file.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture rtl of register_file
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/ram.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/ram.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/ram.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/ram.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ram
 # -- Compiling architecture rtl of ram
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/control_unit.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/control_unit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/control_unit.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture rtl of control_unit
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {/home/andris/Documents/digital_design/MicroMips/alu.vhd}
+# vcom -93 -work work {/home/josh/Documents/assignment/MicroMips/alu.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
-# Start time: 13:32:21 on Apr 04,2016
-# vcom -reportprogress 300 -93 -work work /home/andris/Documents/digital_design/MicroMips/alu.vhd 
+# Start time: 09:01:35 on Apr 13,2016
+# vcom -reportprogress 300 -93 -work work /home/josh/Documents/assignment/MicroMips/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture rtl of alu
-# End time: 13:32:21 on Apr 04,2016, Elapsed time: 0:00:00
+# End time: 09:01:35 on Apr 13,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
 vsim work.soc
 # vsim work.soc 
-# Start time: 13:32:25 on Apr 04,2016
+# Start time: 09:01:41 on Apr 13,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -204,326 +204,34 @@ vsim work.soc
 do test_soc.tcl
 # ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Error: Bad -radix option "-label". Use binary, octal, decimal, signed, unsigned, hexadecimal, ascii or default.
-# (vish-4014) No objects found matching 'PC'.
-# (vish-4014) No objects found matching 'hexadecimal'.
-# Error in macro ./test_soc.tcl line 17
-# Bad -radix option "-label". Use binary, octal, decimal, signed, unsigned, hexadecimal, ascii or default.
-# (vish-4014) No objects found matching 'PC'.
-# (vish-4014) No objects found matching 'hexadecimal'.
-#     while executing
-# "add wave -radix -label PC hexadecimal /soc/core_inst/datap/fetch_u/pc_out "
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Error: (vish-4014) No objects found matching '/soc/core_inst/datap/decode_u/rd'.
-# Error in macro ./test_soc.tcl line 41
-# (vish-4014) No objects found matching '/soc/core_inst/datap/decode_u/rd'.
-#     while executing
-# "add wave -radix hexadecimal -label RD_OUTPUT sim:/soc/core_inst/datap/decode_u/rd"
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 0
-# ** Error: can't read "FETCH_STATE": no such variable
-# Error in macro ./test_soc.tcl line 43
-# can't read "FETCH_STATE": no such variable
-#     while executing
-# "set CURRENT_STATE $FETCH_STATE  "
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 0
-# 0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 210 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 0
-# 1
-# ** Error: can't read "ALU_1_STATE": no such variable
-# Error in macro ./test_soc.tcl line 44
-# can't read "ALU_1_STATE": no such variable
-#     while executing
-# "set ALU_1_STATE"
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 0
-# 1
-# 2
-# 0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 10500 us
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 0
-# 1
-# 2
-# 0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 105 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Error: invalid bareword "step_state"
-# in expression " step_state = FETCH_STATE ";
-# should be "$step_state" or "{step_state}" or "step_state(...)" or ...
-# Error in macro ./test_soc.tcl line 58
-# invalid bareword "step_state"
-# in expression " step_state = FETCH_STATE ";
-# should be "$step_state" or "{step_state}" or "step_state(...)" or ...
-#     (parsing expression " step_state = FETCH_ST...")
-#     invoked from within
-# "if { step_state = FETCH_STATE } {
-#         echo "fetch"
-#     }"
-#     ("for" body line 6)
-#     invoked from within
-# "for {set i 0} {$i < 10} {incr i} {
-#     run 10 ms
-# 
-#     set step_state [examine /soc/core_inst/cu/state]
-# 
-#     if { step_state = FETCH_STATE } {
-#         ..."
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Error: incomplete operator "="
-# in expression " $step_state = FETCH_STATE "
-# Error in macro ./test_soc.tcl line 58
-# incomplete operator "="
-# in expression " $step_state = FETCH_STATE "
-#     (parsing expression " $step_state = FETCH_S...")
-#     invoked from within
-# "if { $step_state = FETCH_STATE } {
-#         echo "fetch"
-#     }"
-#     ("for" body line 6)
-#     invoked from within
-# "for {set i 0} {$i < 10} {incr i} {
-#     run 10 ms
-# 
-#     set step_state [examine /soc/core_inst/cu/state]
-# 
-#     if { $step_state = FETCH_STATE } {
-#        ..."
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Error: invalid bareword "FETCH_STATE"
-# in expression " $step_state == FETCH_STATE ";
-# should be "$FETCH_STATE" or "{FETCH_STATE}" or "FETCH_STATE(...)" or ...
-# Error in macro ./test_soc.tcl line 58
-# invalid bareword "FETCH_STATE"
-# in expression " $step_state == FETCH_STATE ";
-# should be "$FETCH_STATE" or "{FETCH_STATE}" or "FETCH_STATE(...)" or ...
-#     (parsing expression " $step_state == FETCH_...")
-#     invoked from within
-# "if { $step_state == FETCH_STATE } {
-#         echo "fetch"
-#     }"
-#     ("for" body line 6)
-#     invoked from within
-# "for {set i 0} {$i < 10} {incr i} {
-#     run 10 ms
-# 
-#     set step_state [examine /soc/core_inst/cu/state]
-# 
-#     if { $step_state == FETCH_STATE } {
-#       ..."
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# 0 ps
-# 105 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# DECODE
-# DECODE
-# BRANCH
-# BRANCH
-# FETCH
 # FETCH
 # DECODE
+# 2
+# FETCH
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
+# 0
+# FETCH
 # DECODE
+# X Register: XXXXXXXX
+# Y Register: XXXXXXXX
+# DECODE
+# X Register: XXXXXXXX
+# Y Register: XXXXXXXX
 # ALU_1
 # ALU_1
-# 0 ps
-# 105 ms
-do test_soc.tcl
-# ** Warning: (vsim-8683) Uninitialized out port /soc/core_inst/datap/execute_u/alu_zero has no driver.
-# This port will contribute value (U) to the signal network.
-# 'FETCH'
-# 1
-# 2
-# 'FETCH'
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/ram_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /soc/core_inst/datap/decode_u/reg_file
-# FETCH
-# DECODE
-# DECODE
-# BRANCH
-# BRANCH
+# ALU_2
+# ALU_2
 # FETCH
 # FETCH
 # DECODE
-# DECODE
-# ALU_1
+# X Register: XXXXXXXX
+# Y Register: XXXXXXXX
 # 0 ps
 # 106050 us
-# End time: 15:01:52 on Apr 04,2016, Elapsed time: 1:29:27
-# Errors: 21, Warnings: 69
+# End time: 09:04:30 on Apr 13,2016, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 5

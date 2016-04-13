@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Apr  7 11:25:13 2016
+Analysis & Elaboration Status : Successful - Wed Apr 13 09:01:16 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : micro_mips
-Top-level Entity Name : datapath
+Top-level Entity Name : soc
 Family : Cyclone IV E
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

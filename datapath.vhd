@@ -1,3 +1,8 @@
+-- Author: Joshua Savage & Andris Birza
+-- Date: 16.04.2016
+-- Filename: datapath.vhd
+-- Description: Implementation of Datapath for Micro Mips CPU.
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -36,19 +41,19 @@ architecture rtl of datapath is
   -- --------------------------------------------------------------------------
   component fetch_unit is
     port (
-      rst           : in  std_logic;                             -- Resets Fetch Unit
-      clk           : in  std_logic;                             -- System clock input
-      pc_in         : in  std_logic_vector(31 downto 0);         -- New PC value
+      rst           : in  std_logic;                      -- Resets Fetch Unit
+      clk           : in  std_logic;                      -- System clock input
+      pc_in         : in  std_logic_vector(31 downto 0);  -- New PC value
       data_addr     : in  std_logic_vector(31 downto 0);  -- Addr to fetch data
       data          : in  std_logic_vector(31 downto 0);  -- Data from memory
-      pc_write      : in  std_logic;    -- PC write enable
-      inst_data_sel : in  std_logic;    -- Instruction or data
-                                        -- select
-      ir_write      : in  std_logic;    -- IR write enable
+      pc_write      : in  std_logic;                      -- PC write enable
+      inst_data_sel : in  std_logic;                      -- Instruction or data
+                                                          -- select
+      ir_write      : in  std_logic;                      -- IR write enable
       ir_out        : out std_logic_vector(31 downto 0);  -- IR output
       dr_out        : out std_logic_vector(31 downto 0);  -- DR output
-      addr          : out std_logic_vector(31 downto 0);
-      pc_out        : out std_logic_vector(31 downto 0));
+      addr          : out std_logic_vector(31 downto 0);  -- index in memory
+      pc_out        : out std_logic_vector(31 downto 0)); -- current PC value
   end component fetch_unit;
 
   component decode_unit is
@@ -62,7 +67,7 @@ architecture rtl of datapath is
       rd_write_en : in  std_logic;
       rs          : out std_logic_vector(31 downto 0);
       rt          : out std_logic_vector(31 downto 0);
-      se          : out std_logic_vector(31 downto 0));
+      se          : out std_logic_vector(31 downto 0));   -- Sign Extension
   end component decode_unit;
 
   component execute_unit is
@@ -111,9 +116,12 @@ architecture rtl of datapath is
   signal se_out_sig    : std_logic_vector(31 downto 0);
   signal alu_res_sig   : std_logic_vector(31 downto 0);
   signal jmp_addr_sig  : std_logic_vector(29 downto 0);
-  
+
+  -- --------------------------------------------------------------------------
+  -- Behaviours
+  -- --------------------------------------------------------------------------
+
 begin
-  
   fetch_u : fetch_unit port map (
     rst           => rst,
     clk           => clk,

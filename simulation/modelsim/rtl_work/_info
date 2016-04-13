@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/andris/Documents/digital_design/MicroMips/simulation/modelsim
+Z0 d/home/josh/Documents/assignment/MicroMips/simulation/modelsim
 Ealu
-Z1 w1453838522
+Z1 w1460277230
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8/home/andris/Documents/digital_design/MicroMips/alu.vhd
-Z6 F/home/andris/Documents/digital_design/MicroMips/alu.vhd
+Z5 8/home/josh/Documents/assignment/MicroMips/alu.vhd
+Z6 F/home/josh/Documents/assignment/MicroMips/alu.vhd
 l0
 L6
 VbfWjHV^>jFHYW0EOXoo4m2
 !s100 IMc[Zj0?FN>5njG>9agFV2
 Z7 OV;C;10.4b;61
 31
-Z8 !s110 1459773141
+Z8 !s110 1460534495
 !i10b 1
-Z9 !s108 1459773141.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/alu.vhd|
-Z11 !s107 /home/andris/Documents/digital_design/MicroMips/alu.vhd|
+Z9 !s108 1460534495.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/alu.vhd|
+Z11 !s107 /home/josh/Documents/assignment/MicroMips/alu.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1
@@ -50,12 +50,12 @@ R11
 R12
 R13
 Echip_selector
-Z14 w1458820001
+R1
 R3
 R4
 R0
-Z15 8/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd
-Z16 F/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd
+Z14 8/home/josh/Documents/assignment/MicroMips/chip_selector.vhd
+Z15 F/home/josh/Documents/assignment/MicroMips/chip_selector.vhd
 l0
 L4
 V2GE]SLgb:C_XIi9eo5?Sm2
@@ -65,8 +65,8 @@ R7
 R8
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/chip_selector.vhd|
-Z18 !s107 /home/andris/Documents/digital_design/MicroMips/chip_selector.vhd|
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/chip_selector.vhd|
+Z17 !s107 /home/josh/Documents/assignment/MicroMips/chip_selector.vhd|
 !i113 1
 R12
 R13
@@ -83,19 +83,19 @@ R7
 R8
 !i10b 1
 R9
+R16
 R17
-R18
 !i113 1
 R12
 R13
 Eclock_unit
-Z19 w1458311284
+R1
 R2
 R3
 R4
 R0
-Z20 8/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd
-Z21 F/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd
+Z18 8/home/josh/Documents/assignment/MicroMips/clock_unit.vhd
+Z19 F/home/josh/Documents/assignment/MicroMips/clock_unit.vhd
 l0
 L5
 VEPn?anH>zWJoS0=Az>BVT0
@@ -105,8 +105,8 @@ R7
 R8
 !i10b 1
 R9
-Z22 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/clock_unit.vhd|
-Z23 !s107 /home/andris/Documents/digital_design/MicroMips/clock_unit.vhd|
+Z20 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/clock_unit.vhd|
+Z21 !s107 /home/josh/Documents/assignment/MicroMips/clock_unit.vhd|
 !i113 1
 R12
 R13
@@ -124,18 +124,18 @@ R7
 R8
 !i10b 1
 R9
-R22
-R23
+R20
+R21
 !i113 1
 R12
 R13
 Econtrol_unit
-Z24 w1456487440
+R1
 R3
 R4
 R0
-Z25 8/home/andris/Documents/digital_design/MicroMips/control_unit.vhd
-Z26 F/home/andris/Documents/digital_design/MicroMips/control_unit.vhd
+Z22 8/home/josh/Documents/assignment/MicroMips/control_unit.vhd
+Z23 F/home/josh/Documents/assignment/MicroMips/control_unit.vhd
 l0
 L4
 V>oZO3G]_g18OdNzmVkhZM2
@@ -145,8 +145,8 @@ R7
 R8
 !i10b 1
 R9
-Z27 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/control_unit.vhd|
-Z28 !s107 /home/andris/Documents/digital_design/MicroMips/control_unit.vhd|
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/control_unit.vhd|
+Z25 !s107 /home/josh/Documents/assignment/MicroMips/control_unit.vhd|
 !i113 1
 R12
 R13
@@ -163,18 +163,18 @@ R7
 R8
 !i10b 1
 R9
-R27
-R28
+R24
+R25
 !i113 1
 R12
 R13
 Ecore
-Z29 w1458759078
+R1
 R3
 R4
 R0
-Z30 8/home/andris/Documents/digital_design/MicroMips/core.vhd
-Z31 F/home/andris/Documents/digital_design/MicroMips/core.vhd
+Z26 8/home/josh/Documents/assignment/MicroMips/core.vhd
+Z27 F/home/josh/Documents/assignment/MicroMips/core.vhd
 l0
 L5
 VPdIX`gKl]i:io7WHO:;3e2
@@ -184,8 +184,8 @@ R7
 R8
 !i10b 1
 R9
-Z32 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/core.vhd|
-Z33 !s107 /home/andris/Documents/digital_design/MicroMips/core.vhd|
+Z28 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/core.vhd|
+Z29 !s107 /home/josh/Documents/assignment/MicroMips/core.vhd|
 !i113 1
 R12
 R13
@@ -202,30 +202,30 @@ R7
 R8
 !i10b 1
 R9
-R32
-R33
+R28
+R29
 !i113 1
 R12
 R13
 Edatapath
-Z34 w1458754051
+Z30 w1460412756
 R2
 R3
 R4
 R0
-Z35 8/home/andris/Documents/digital_design/MicroMips/datapath.vhd
-Z36 F/home/andris/Documents/digital_design/MicroMips/datapath.vhd
+Z31 8/home/josh/Documents/assignment/MicroMips/datapath.vhd
+Z32 F/home/josh/Documents/assignment/MicroMips/datapath.vhd
 l0
-L5
-VeYjRO0TkVKHJP8V2jMF5T2
-!s100 Q9oTmaml9EFNTHF:IP4GL1
+L10
+VYIPD7NVk>N<dlgoCJZS[[0
+!s100 [Y4B_dY^1V<]3nI3S^fk@3
 R7
 31
 R8
 !i10b 1
 R9
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/datapath.vhd|
-Z38 !s107 /home/andris/Documents/digital_design/MicroMips/datapath.vhd|
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/datapath.vhd|
+Z34 !s107 /home/josh/Documents/assignment/MicroMips/datapath.vhd|
 !i113 1
 R12
 R13
@@ -233,29 +233,29 @@ Artl
 R2
 R3
 R4
-DEx4 work 8 datapath 0 22 eYjRO0TkVKHJP8V2jMF5T2
-l115
-L32
-V4NjkLE;zmaBkbhiQDE3gL0
-!s100 ohmUOYHX9m`Qo^]`GZ_FB1
+DEx4 work 8 datapath 0 22 YIPD7NVk>N<dlgoCJZS[[0
+l120
+L37
+VDcUQ7eBcS;W7<Y]PXz[lL3
+!s100 BNS?_IHho^=11;4WIf?j_1
 R7
 31
 R8
 !i10b 1
 R9
-R37
-R38
+R33
+R34
 !i113 1
 R12
 R13
 Edecode_unit
-Z39 w1458649441
+R1
 R2
 R3
 R4
 R0
-Z40 8/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd
-Z41 F/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd
+Z35 8/home/josh/Documents/assignment/MicroMips/decode_unit.vhd
+Z36 F/home/josh/Documents/assignment/MicroMips/decode_unit.vhd
 l0
 L5
 VN4VgXB]n93`LEi:1C@9Ne3
@@ -265,8 +265,8 @@ R7
 R8
 !i10b 1
 R9
-Z42 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/decode_unit.vhd|
-Z43 !s107 /home/andris/Documents/digital_design/MicroMips/decode_unit.vhd|
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/decode_unit.vhd|
+Z38 !s107 /home/josh/Documents/assignment/MicroMips/decode_unit.vhd|
 !i113 1
 R12
 R13
@@ -284,19 +284,19 @@ R7
 R8
 !i10b 1
 R9
-R42
-R43
+R37
+R38
 !i113 1
 R12
 R13
 Eexecute_unit
-Z44 w1458750617
+R1
 R2
 R3
 R4
 R0
-Z45 8/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd
-Z46 F/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd
+Z39 8/home/josh/Documents/assignment/MicroMips/execute_unit.vhd
+Z40 F/home/josh/Documents/assignment/MicroMips/execute_unit.vhd
 l0
 L5
 VT3C=LW[4B>FdLn62a1mgl0
@@ -306,8 +306,8 @@ R7
 R8
 !i10b 1
 R9
-Z47 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/execute_unit.vhd|
-Z48 !s107 /home/andris/Documents/digital_design/MicroMips/execute_unit.vhd|
+Z41 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/execute_unit.vhd|
+Z42 !s107 /home/josh/Documents/assignment/MicroMips/execute_unit.vhd|
 !i113 1
 R12
 R13
@@ -325,18 +325,18 @@ R7
 R8
 !i10b 1
 R9
-R47
-R48
+R41
+R42
 !i113 1
 R12
 R13
 Efetch_unit
-Z49 w1458751244
+R1
 R3
 R4
 R0
-Z50 8/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd
-Z51 F/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd
+Z43 8/home/josh/Documents/assignment/MicroMips/fetch_unit.vhd
+Z44 F/home/josh/Documents/assignment/MicroMips/fetch_unit.vhd
 l0
 L4
 V;>e`UG18<TdQg`m<ARQk]0
@@ -346,8 +346,8 @@ R7
 R8
 !i10b 1
 R9
-Z52 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd|
-Z53 !s107 /home/andris/Documents/digital_design/MicroMips/fetch_unit.vhd|
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/fetch_unit.vhd|
+Z46 !s107 /home/josh/Documents/assignment/MicroMips/fetch_unit.vhd|
 !i113 1
 R12
 R13
@@ -364,19 +364,19 @@ R7
 R8
 !i10b 1
 R9
-R52
-R53
+R45
+R46
 !i113 1
 R12
 R13
 Eram
-Z54 w1458760433
+R1
 R2
 R3
 R4
 R0
-Z55 8/home/andris/Documents/digital_design/MicroMips/ram.vhd
-Z56 F/home/andris/Documents/digital_design/MicroMips/ram.vhd
+Z47 8/home/josh/Documents/assignment/MicroMips/ram.vhd
+Z48 F/home/josh/Documents/assignment/MicroMips/ram.vhd
 l0
 L5
 V@K`3<Mah6F`^aLZc7kT_c3
@@ -386,8 +386,8 @@ R7
 R8
 !i10b 1
 R9
-Z57 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/ram.vhd|
-Z58 !s107 /home/andris/Documents/digital_design/MicroMips/ram.vhd|
+Z49 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/ram.vhd|
+Z50 !s107 /home/josh/Documents/assignment/MicroMips/ram.vhd|
 !i113 1
 R12
 R13
@@ -405,8 +405,8 @@ R7
 R8
 !i10b 1
 R9
-R57
-R58
+R49
+R50
 !i113 1
 R12
 R13
@@ -416,8 +416,8 @@ R2
 R3
 R4
 R0
-Z59 8/home/andris/Documents/digital_design/MicroMips/register_file.vhd
-Z60 F/home/andris/Documents/digital_design/MicroMips/register_file.vhd
+Z51 8/home/josh/Documents/assignment/MicroMips/register_file.vhd
+Z52 F/home/josh/Documents/assignment/MicroMips/register_file.vhd
 l0
 L5
 Va=0LZ34CKah5ef82GdQA83
@@ -427,8 +427,8 @@ R7
 R8
 !i10b 1
 R9
-Z61 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/register_file.vhd|
-Z62 !s107 /home/andris/Documents/digital_design/MicroMips/register_file.vhd|
+Z53 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/register_file.vhd|
+Z54 !s107 /home/josh/Documents/assignment/MicroMips/register_file.vhd|
 !i113 1
 R12
 R13
@@ -446,20 +446,20 @@ R7
 R8
 !i10b 1
 R9
-R61
-R62
+R53
+R54
 !i113 1
 R12
 R13
 Erom
-Z63 w1458822859
-Z64 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z55 w1460534462
+Z56 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R2
 R3
 R4
 R0
-Z65 8/home/andris/Documents/digital_design/MicroMips/rom.vhd
-Z66 F/home/andris/Documents/digital_design/MicroMips/rom.vhd
+Z57 8/home/josh/Documents/assignment/MicroMips/rom.vhd
+Z58 F/home/josh/Documents/assignment/MicroMips/rom.vhd
 l0
 L7
 VKKzY7@W;OG4]6L8Vb`5C[0
@@ -469,38 +469,38 @@ R7
 R8
 !i10b 1
 R9
-Z67 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/rom.vhd|
-Z68 !s107 /home/andris/Documents/digital_design/MicroMips/rom.vhd|
+Z59 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/rom.vhd|
+Z60 !s107 /home/josh/Documents/assignment/MicroMips/rom.vhd|
 !i113 1
 R12
 R13
 Artl
-R64
+R56
 R2
 R3
 R4
 DEx4 work 3 rom 0 22 KKzY7@W;OG4]6L8Vb`5C[0
 l280
 L16
-V1T3fbbha@F?4i4MhL@biW3
-!s100 LAi;[FD;BS2a:0>?TVQ?H3
+VI7?e^Q;I0RNZg::CXnEI^1
+!s100 @]`=z6b`e=:oDVGJLn@Vb0
 R7
 31
 R8
 !i10b 1
 R9
-R67
-R68
+R59
+R60
 !i113 1
 R12
 R13
 Esoc
-Z69 w1458820090
+R1
 R3
 R4
 R0
-Z70 8/home/andris/Documents/digital_design/MicroMips/soc.vhd
-Z71 F/home/andris/Documents/digital_design/MicroMips/soc.vhd
+Z61 8/home/josh/Documents/assignment/MicroMips/soc.vhd
+Z62 F/home/josh/Documents/assignment/MicroMips/soc.vhd
 l0
 L4
 V6^W<3Oo[]jI@]9C]5BUAI0
@@ -510,8 +510,8 @@ R7
 R8
 !i10b 1
 R9
-Z72 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/soc.vhd|
-Z73 !s107 /home/andris/Documents/digital_design/MicroMips/soc.vhd|
+Z63 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/soc.vhd|
+Z64 !s107 /home/josh/Documents/assignment/MicroMips/soc.vhd|
 !i113 1
 R12
 R13
@@ -528,18 +528,18 @@ R7
 R8
 !i10b 1
 R9
-R72
-R73
+R63
+R64
 !i113 1
 R12
 R13
 Ewriteback_unit
-Z74 w1458740548
+R1
 R3
 R4
 R0
-Z75 8/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd
-Z76 F/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd
+Z65 8/home/josh/Documents/assignment/MicroMips/writeback_unit.vhd
+Z66 F/home/josh/Documents/assignment/MicroMips/writeback_unit.vhd
 l0
 L4
 VljZ7iW5RV[jo@CNzbQk>@0
@@ -549,8 +549,8 @@ R7
 R8
 !i10b 1
 R9
-Z77 !s90 -reportprogress|300|-93|-work|work|/home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd|
-Z78 !s107 /home/andris/Documents/digital_design/MicroMips/writeback_unit.vhd|
+Z67 !s90 -reportprogress|300|-93|-work|work|/home/josh/Documents/assignment/MicroMips/writeback_unit.vhd|
+Z68 !s107 /home/josh/Documents/assignment/MicroMips/writeback_unit.vhd|
 !i113 1
 R12
 R13
@@ -567,8 +567,8 @@ R7
 R8
 !i10b 1
 R9
-R77
-R78
+R67
+R68
 !i113 1
 R12
 R13

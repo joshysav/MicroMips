@@ -1,3 +1,7 @@
+-- Author: Joshua Savage & Andris Birza
+-- Date: 20.04.2016
+-- Filename: fetch_unit.vhd
+-- Description: Datapath Fetch Unit for Micro Mips CPU
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -30,9 +34,8 @@ architecture rtl of fetch_unit is
 -- --------------------------------------------------------------------------
 -- INTERNAL SIGNALS
 -- --------------------------------------------------------------------------
-  
-begin  -- architecture rtl
 
+begin  -- architecture rtl
   -- Process updates PC value
   pc_update : process (clk, rst, pc_write, pc_in) is
   begin  -- process
@@ -73,5 +76,5 @@ begin  -- architecture rtl
   ir_out <= ir_register;
   dr_out <= dr_register;
   pc_out <= pc_register;
-  
+
 end architecture rtl;
